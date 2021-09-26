@@ -1,0 +1,33 @@
+---
+title: "ReadMe for Analysis Description"
+subtitle: "Getting and Cleaning Data,Project"
+date: "9/26/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Analysis Description
+This guide describes the steps taken to produce the tidy dataset in the *run_analysis.R*.
+
+0. I call the **dplyr** library to use later in the data cleaning process. (line 1)
+1. I import the *features*, *subject_ids* and *labels* for both train and test datasets. (lines 2-7)
+2. I print the dimensions of each dataset to check everything is correct. (lines 8-9)
+3. I rename the variable to a more descriptive one for the *subject_id* variables. (lines 10-11)
+4. I print the names to test if the change is implemented correctly. (lines 12-13)
+5. I merge the *subject_id* with the rest of the *features*. (lines 14-15)
+6. I merge the train and test datasets (lines 16-17)
+7. I print the names and dimension of the merged *features*  and the dimension of merged *labels* to check if everything is correct. (line 18-19)
+8. I extract the variables with only the **mean** and **standard deviation** mesurement as required by the assignment and add them to a new dataframe. (lines 20-24)
+9. I review the names, dimension and a the first few rows of the new dataframe to make sure everything is correct. (lines 25-27)
+10. I rename the columns to more descriptive names for both the extracted *features* and *labels*. (lines 28-55)
+11. I check the names to make sure the changes are implemented correctly. (lines 56-57)
+12. I merge the renamed extracted *features*, *labels* and *subject_ids* in one dataframe. (lines 58-59)
+13. I check the names to make sure descriptive names are assigned correctly. (line 60)
+14. I produce a new dataset based on the average of features for each *subject_id* and each *label*. (line 61)
+15. I export the dataset into a text file. (line 62).
+
+
+

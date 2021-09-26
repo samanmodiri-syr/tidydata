@@ -1,0 +1,18 @@
+---
+title: "CodeBook for Variable Definition and Description"
+subtitle: "Getting and Cleaning Data, Project"
+date: "9/26/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r echo=FALSE}
+library(knitr)
+tablee<-read.table("code_book_table.txt",header=TRUE)
+kable(tablee)
+```
+
